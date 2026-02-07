@@ -1,0 +1,13 @@
+stations:
+  - name: "Rochusgasse"
+    rbls: [4903, 4904]       # U3 both directions
+  - name: "Landstraße"
+    rbls: [146, 145]         # U3/U4
+
+refresh_interval: 60          # seconds between API calls
+full_refresh_every: 5         # full e-paper refresh every N cycles (prevent ghosting)
+
+display:
+  type: "epd7in5_V2"         # Waveshare model
+  simulate: false             # true = render to PNG instead of hardware
+  output_dir: "output"       # directory for PNG output in simulate mode

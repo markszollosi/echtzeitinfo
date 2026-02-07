@@ -1,0 +1,17 @@
+[Unit]
+Description=Echtzeitinfo — Vienna departure display
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/echtzeitinfo
+ExecStart=/home/pi/echtzeitinfo/.venv/bin/python -m src.main
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

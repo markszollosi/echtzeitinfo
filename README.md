@@ -6,7 +6,7 @@ Sits next to the apartment door for a quick glance at upcoming departures before
 
 ## How it works
 
-1. Fetches real-time departures from the [Wiener Linien API](https://www.data.gv.at/katalog/dataset/wiener-linien-echtzeitdaten-via-datendrehscheibe-wien)
+1. Fetches real-time departures from the [Wiener Linien API](https://www.data.gv.at/datasets/cfba4373-a654-3e0b-80f8-348738169f95?locale=de)
 2. Renders a clean departure board with station names, line numbers, directions, and next 3 departure countdowns
 3. Updates the e-paper display every 60 seconds (configurable)
 4. Periodic full refresh to prevent ghosting
@@ -81,7 +81,7 @@ display:
   output_dir: "output"
 ```
 
-RBL numbers identify specific stops/platforms. You can find them via the [Wiener Linien CSV data](https://data.wien.gv.at/csv/wienerlinien-ogd-haltepunkte.csv).
+RBL numbers identify specific stops/platforms. You can find them via the [Wiener Linien CSV data](https://www.wienerlinien.at/ogd_realtime/doku/ogd/wienerlinien-ogd-haltepunkte.csv).
 
 ## Hardware
 
